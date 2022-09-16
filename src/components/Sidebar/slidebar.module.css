@@ -1,0 +1,59 @@
+.sidebar {
+    flex-grow: 1;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    transition: all ease-in-out 250ms;
+}
+
+.sidebar ul li{
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+.sidebar ul li a{
+    color: white;
+}
+
+.sidebar ul li a:hover{
+    color: #cbcbcb;
+}
+
+
+.input {
+    display: none;
+}
+
+.label {
+    position: absolute;
+    z-index: 2;
+    left: 1rem;
+    top: 1rem;
+    display: none;
+}
+
+
+@media (max-width: 550px) {
+    .sidebar {
+        position: absolute;
+        left: -150px;
+    }
+    .input:checked ~ nav {
+        left: 0;
+        background: #3b4569;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        z-index: 1;
+        transition: all ease-in-out 250ms;
+    }
+    .label {
+        display: block;
+        background: white;
+        border: solid 1px black;
+        padding: 0 1rem;
+    }
+}
+
+
+

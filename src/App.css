@@ -1,0 +1,6 @@
+.app {
+  display: flex;
+  background: linear-gradient(#272764, #141e36);
+  min-height: 100vh;
+  position: relative;
+}
